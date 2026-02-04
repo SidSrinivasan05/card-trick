@@ -72,3 +72,32 @@ The fold sequence (pile indices)
 The final array mapping (which card positions end up where)
 
 If no forcing sequence exists, it will report failure.
+
+## How It Works
+
+# Fold Operation
+
+The deck is represented as a list of integers indicating positions.
+Splitting into piles rearranges the mapping of initial positions to new positions.
+
+The fold function:
+
+```
+fold(arr, f, n, p)
+```
+
+arr: current mapping of positions
+
+f: which pile index is being placed on top
+
+n: total cards
+
+p: number of piles
+
+It returns the new mapping after the fold.
+
+# Convergence
+
+The trick is considered to “force” the target position if, for every possible starting index, the final position of the card is the same — i.e., the mapping array becomes constant at that index.
+
+The BFS explores all sequences of folds and returns the shortest one that achieves this.
