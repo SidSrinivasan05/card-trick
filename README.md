@@ -27,6 +27,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/SidSrinivasan05/card-trick.git
 cd card-trick
+```
 
 ## Requirements
 
