@@ -101,3 +101,7 @@ It returns the new mapping after the fold.
 The trick is considered to “force” the target position if, for every possible starting index, the final position of the card is the same — i.e., the mapping array becomes constant at that index.
 
 The BFS explores all sequences of folds and returns the shortest one that achieves this.
+
+# Summary
+
+This project explores the mathematics behind card tricks by modeling permutations and searching for forcing sequences. It’s both a fun programming challenge and an example of how combinatorics can be applied to classic puzzles.
