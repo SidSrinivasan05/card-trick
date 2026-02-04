@@ -27,3 +27,47 @@ Clone the repository:
 ```bash
 git clone https://github.com/SidSrinivasan05/card-trick.git
 cd card-trick
+
+## Requirements
+
+```
+pip install numpy
+```
+
+
+## Usage
+
+Run the script:
+
+```
+python main.py
+```
+
+You will be prompted for:
+
+n — number of cards (must be divisible by p)
+
+p — number of piles
+
+s — position you want to force (1-indexed)
+
+Example input:
+
+```
+How many cards are you playing with?
+> 51
+How many piles do you want to split the cards into?
+> 3
+Where do you want the card to end up? (1 to 51)
+> 26
+```
+
+The program will print:
+
+Number of steps to reach convergence
+
+The fold sequence (pile indices)
+
+The final array mapping (which card positions end up where)
+
+If no forcing sequence exists, it will report failure.
